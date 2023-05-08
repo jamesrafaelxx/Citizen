@@ -1,0 +1,8 @@
+<resources>
+    <string name="app_name">CitizenSample</string>
+    <string name="select">Sex</string>
+    <string name="back"><![CDATA[<-]]></string>
+    <string name="next"><![CDATA[->]]></string>
+
+
+</resources>

@@ -1,0 +1,221 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:id="@+id/drawerLayout"
+    style="@style/ScreenBackground"
+    tools:context=".update_profile">
+
+    <LinearLayout
+        android:layout_width="match_parent"
+        android:layout_height="match_parent"
+        android:orientation="vertical">
+
+        <include
+            layout="@layout/activity_nurse_pc_toolbar"/>
+
+
+
+
+
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="match_parent"
+            style="@style/CardBackground"
+            android:gravity="center"
+            android:layout_margin="10dp"
+            android:orientation="vertical">
+
+            <LinearLayout
+                android:layout_width="match_parent"
+                android:layout_height="match_parent"
+                android:background="@drawable/custom_edittext"
+                android:gravity="center"
+                android:orientation="vertical">
+
+
+
+
+
+
+                <LinearLayout
+                    android:layout_width="match_parent"
+                    android:layout_height="wrap_content"
+                    android:layout_marginTop="15dp"
+                    android:gravity="center"
+                    android:orientation="vertical">
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="Username:"
+                            android:textStyle="bold"
+                            android:textSize="13dp"
+                            android:fontFamily="@font/poppins"
+                            style="@style/TexColor"/>
+
+                        <EditText
+                            android:layout_width="320dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/custom_box_edittext"
+                            android:hint="Enter Username"
+                            android:textSize="16sp"
+                            android:padding="12dp"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/cardview_dark_background" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="Email:"
+                            android:textStyle="bold"
+                            android:textSize="13dp"
+                            android:fontFamily="@font/poppins"
+                            style="@style/TexColor"/>
+
+                        <EditText
+                            android:layout_width="320dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/custom_box_edittext"
+                            android:drawablePadding="8dp"
+                            android:hint="Enter Email"
+                            android:textSize="16sp"
+                            android:padding="12dp"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/cardview_dark_background" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="Phone Number:"
+                            style="@style/TexColor"
+                            android:textStyle="bold"
+                            android:textSize="13dp"
+                            android:fontFamily="@font/poppins" />
+
+                        <EditText
+                            android:layout_width="320dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/custom_box_edittext"
+                            android:drawablePadding="8dp"
+                            android:hint="Enter Phone Number"
+                            android:textSize="16sp"
+                            android:padding="12dp"
+                            android:textColor="@color/black"
+                            android:textColorHighlight="@color/cardview_dark_background" />
+
+                    </LinearLayout>
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <TextView
+                            android:layout_width="match_parent"
+                            android:layout_height="wrap_content"
+                            android:layout_marginTop="10dp"
+                            android:layout_marginStart="10dp"
+                            android:text="Confirm Password:"
+                            android:textStyle="bold"
+                            android:textSize="13dp"
+                            android:fontFamily="@font/poppins"
+                            style="@style/TexColor"/>
+
+                        <EditText
+                            android:layout_width="320dp"
+                            android:layout_height="match_parent"
+                            android:background="@drawable/custom_box_edittext"
+                            android:drawablePadding="8dp"
+                            android:hint="Enter Password "
+                            android:textSize="16sp"
+                            android:padding="12dp"
+                            style="@style/TexColor"
+                            android:textColorHighlight="@color/cardview_dark_background" />
+
+                    </LinearLayout>
+
+
+
+                    <LinearLayout
+                        android:layout_width="match_parent"
+                        android:layout_height="wrap_content"
+                        android:layout_marginTop="20dp"
+                        android:layout_marginBottom="10dp"
+                        android:gravity="center"
+                        android:orientation="vertical">
+
+                        <Button
+                            android:id="@+id/update_btn"
+                            android:layout_width="320dp"
+                            android:layout_height="60dp"
+                            android:backgroundTint="@color/pink"
+                            android:text="Update Profile"
+                            style="@style/BtnTexColor"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/changepw_btn"
+                            android:layout_width="320dp"
+                            android:layout_height="60dp"
+                            android:backgroundTint="@color/pink"
+                            android:text="Change Password"
+                            android:onClick="openupdate_ai_pass"
+                            style="@style/BtnTexColor"
+                            android:textSize="12sp" />
+
+                        <Button
+                            android:id="@+id/bck_btn"
+                            android:layout_width="320dp"
+                            android:layout_height="60dp"
+                            android:backgroundTint="@color/pink"
+                            android:text="Go Back!"
+                            android:onClick="opencitizen_profile_ai"
+                            style="@style/BtnTexColor"
+                            android:textSize="12sp" />
+
+                    </LinearLayout>
+
+                </LinearLayout>
+
+            </LinearLayout>
+
+        </LinearLayout>
+
+    </LinearLayout>
+
+
+</androidx.constraintlayout.widget.ConstraintLayout>
